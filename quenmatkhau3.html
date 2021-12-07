@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>iTap</title>
+	<link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+	<link href="css/mainlogin.css" rel="stylesheet" type="text/css">
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+</head>
+<body>
+	<main class="dangky">
+		<div class="container">
+			<div id="dkLogin" class="row justify-content-center">
+				<div class="formlogin col-lg-5 col-md-8 col-12">
+					<img class="logo-login" src="images/logo.png" alt="" />
+					<h4 class="title-login">Quên mật khẩu</h4>
+					<div class="formmain">
+						<form class="row g-3 needs-validation" novalidate>
+							<label for="validationCustom01" class="form-label1">Rất tiếc tài khoản của bạn chưa cập nhật đầy đủ thông tin, bạn không thể lấy lại mật khẩu. Để lấy lại mật khẩu, tài khoản của bạn phải có một trong các thông tin sau:</label>
+							<div class="col-12">
+							  <span><i class="fa fa-check-circle"></i>Đã xác minh số điện thoại</span>
+							</div>
+							<div class="col-12">
+							  <span><i class="fa fa-check-circle"></i>Đã đăng ký email</span>
+							</div>
+						  <div class="col-12">
+							<button class="btn btn-primary dangnhap" type="submit">Đăng nhập iTapID</button>
+						  </div>
+							<div class="col-12">
+							  <span>Nếu bạn chưa đăng ký thông tin hoặc thông tin đăng ký không còn sử dụng được, vui lòng liên hệ hotline <strong>19001900</strong> để được tư vấn.</span>
+							</div>
+							
+						</form>
+					</div>
+				</div><!--End formlogin-->
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="mainfooter">
+					<img src="images/logo.png" alt="" class="logo-footer"/>
+					<p>Công ty Cổ phần Truyền hình Tương tác Việt Nam<br>
+		VTVLive Office, tầng 7, VTVCab Tower<br>
+		Số 3, ngõ 84 Ngọc Khánh, Ba Đình, Hà Nội, Việt Nam<br>
+		Email: info@itap.vn</p>
+				</div>
+			</div>
+		</footer>
+	</main>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		   updateScale();
+		 });
+		function updateScale() {
+			const resizeObserver = new ResizeObserver(function(entries) {
+				var height = entries[0].target.clientHeight + 50;
+				var boxx = $('.footer');
+				var height2 = boxx.outerHeight();
+				var wd = $( window ).height();
+
+				console.log('Screen change', [height, height2, wd]);
+
+				if ((height + height2) > wd){
+					$(".footer").addClass("nofixed");
+				} else{
+					$(".footer").removeClass("nofixed");
+				}
+			})
+			// start observing a DOM node
+			resizeObserver.observe(document.querySelector('#dkLogin'))
+		}
+		$(window).resize(updateScale);
+	</script>
+</body>
+</html>

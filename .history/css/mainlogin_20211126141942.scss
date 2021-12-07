@@ -1,0 +1,128 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+$fontfam:'Montserrat', Roboto, sans-serif;
+:root {
+--color1: #e13f45;
+--color2:#333333;
+--color3:#808080;
+--colorok:#31da70;
+--colorerror:#ff6d6d;
+--whitecolor:#fff;
+--colorlink:#409ff5;
+--spacing:30px;
+}
+body{font-family: $fontfam;font-size: 14px;font-weight: 400;background: url("../images/pattern-bg.jpg") repeat top center;}
+*{outline: none;box-sizing: border-box;padding: 0;margin: 0;}
+a {text-decoration: none;transition:all 0.3s ease-in-out;}
+button{transition:all 0.7s ease-in-out !important;}
+a:hover {text-decoration: none;}
+main{position: relative;height: 100vh;}
+.formlogin{background: #fff;border-radius:5px;position: relative;margin-top: 10%;
+	display: flex;flex-direction: column;padding: calc(var(--spacing) + 2px) calc(var(--spacing) * 1.5) calc(var(--spacing) * 1.5);
+	.logo-login{width: 120px;height:36px;object-fit: cover;display: block;margin: 0 auto;}
+	h4.title-login{text-align: center;color: var(--color3);text-transform: uppercase;margin: 38px 0 25px;}
+	h4.thanhcong{color: var(--colorok);}
+	.formmain{
+		button.dangnhap{width: 100%;background-color: var(--color1);border: none;text-transform: uppercase;padding: 0.6rem 0;font-size: 18px;transition:all 0.3s ease-in-out;
+			&:hover{filter: brightness(105%);}
+		}
+		button.huy{background-color:var(--color3);}
+		.blockbot{display: flex;justify-content: space-between;
+			a{color: var(--color2);
+				&:hover{color:var(--colorlink);}
+			}
+			a.btn-dangnhap{font-weight:500;color: var(--colorlink);
+				&:hover{text-decoration: underline;}
+			}
+		}
+		.input-group{color: var(--color3);
+			i.fa{position: absolute;left: 17px;z-index: 5;top:12px;font-size: 1rem;}
+			input.form-control{font-size: 14px;padding: .575rem .75rem;padding-left:30px;border-radius:5px !important;}
+		}
+		.checkcheck{color: var(--color2);align-items: center;
+			.form-check-input{margin-right:5px;border-radius: .25em !important;margin-top:0;}
+			a{color:var(--colorlink);transition:all 0.3s ease-in-out;
+				&:hover{text-decoration:underline;}}
+		}
+		.form-label1{margin-bottom: 0;}
+		span{
+			i{margin-right: 5px;color: var(--colorlink);}
+			strong{color: var(--color1);}
+		}
+		.maotp{
+			a{color: var(--colorlink);}
+		}
+		.pass .form-control.is-valid, .was-validated .pass .form-control:valid{
+				background-position: right calc(.375em + .1875rem + 1.5rem) center;
+		
+		}
+	}
+	i.bi{position: absolute;right: 20px;top: 8px;z-index: 5;cursor: pointer;}
+	
+}
+footer{width: 100%;display: flex;text-align: center;position: fixed;background:var(--whitecolor);margin-top:2rem;bottom:0;
+	.mainfooter{position: relative;bottom:0;padding: 30px 0;
+		img{width: 100px;height: 30px;object-fit: cover;margin-bottom:25px;}
+		p{line-height: 1.6;}
+	}
+}
+.nofixed{position: relative !important;}
+.dangky{
+	.formlogin{margin-top: 5%;}
+	footer{}
+}
+.dksd{
+	.logo-login{width: 126px;height: 58px;object-fit: cover;display: block;margin:2rem auto 1rem;}
+	h4.title-login{text-align: center;color: var(--color2);text-transform: uppercase;margin: 38px 0 25px;}
+	h4.thanhcong{color: var(--colorok);}
+	footer{position: fixed;padding-top: 0;display: flex;flex-direction: column;margin-top: 70px;
+		.menufooter{background-color:#e6e6e6;width: 100%;padding: 0.5rem 0;margin-bottom: 1rem;
+			ul{list-style: none;display: flex;align-items: center;justify-content:center;margin-bottom: 0;padding: 0;
+				li{margin: 0 0.5rem;
+					a{color: var(--color2);
+						&:hover{color: var(--colorlink);}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+/*	footer{position: relative;}*/
+}
+
+@media (max-width: 540px) {
+	.formlogin{background: transparent;}
+	footer{margin-top: 70px;font-size: 12px;}
+	:root {
+		--spacing:15px;
+	}
+}
+
+@media (max-width: 320px) {
+	footer{position: relative;margin-top: 70px;font-size: 12px;}
+}
