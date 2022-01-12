@@ -17,7 +17,7 @@ a {text-decoration: none;transition:all 0.3s ease-in-out;}
 button{transition:all 0.7s ease-in-out !important;}
 a:hover {text-decoration: none;}
 main{position: relative;height: 100vh;}
-.formlogin{background: #fff;border-radius:5px;position: relative;margin-top: 10%;
+.formlogin{background: #fff;border-radius:5px;position: relative;margin-top:5%;
 	display: flex;flex-direction: column;padding: calc(var(--spacing) + 2px) calc(var(--spacing) * 1.5) calc(var(--spacing) * 1.5);
 	.logo-login{width: 100px;height:30px;object-fit: cover;display: block;margin: 0 auto;}
 	h4.title-login{text-align: center;color: var(--color3);text-transform: uppercase;margin: 38px 0 25px;}
@@ -26,6 +26,8 @@ main{position: relative;height: 100vh;}
 		button.dangnhap{width: 100%;background-color: var(--color1);border: none;text-transform: uppercase;padding: 0.6rem 0;font-size: 18px;transition:all 0.3s ease-in-out;
 			&:hover{filter: brightness(105%);}
 		}
+		button.facebook{background-color: #3b5998;}
+		button.google{background-color: #e76150;}
 		button.huy{background-color:var(--color3);}
 		.blockbot{display: flex;justify-content: space-between;
 			a{color: var(--color2);

@@ -20,20 +20,17 @@ body {
 
 * {
   outline: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 a {
   text-decoration: none;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 button {
-  -webkit-transition: all 0.7s ease-in-out !important;
   transition: all 0.7s ease-in-out !important;
 }
 
@@ -50,17 +47,11 @@ main {
   background: #fff;
   border-radius: 5px;
   position: relative;
-  margin-top: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  margin-top: 5%;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: calc(var(--spacing) + 2px) calc(var(--spacing) * 1.5) calc(var(--spacing) * 1.5);
 }
-
 .formlogin .logo-login {
   width: 100px;
   height: 30px;
@@ -69,18 +60,15 @@ main {
   display: block;
   margin: 0 auto;
 }
-
 .formlogin h4.title-login {
   text-align: center;
   color: var(--color3);
   text-transform: uppercase;
   margin: 38px 0 25px;
 }
-
 .formlogin h4.thanhcong {
   color: var(--colorok);
 }
-
 .formlogin .formmain button.dangnhap {
   width: 100%;
   background-color: var(--color1);
@@ -88,49 +76,40 @@ main {
   text-transform: uppercase;
   padding: 0.6rem 0;
   font-size: 18px;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
 .formlogin .formmain button.dangnhap:hover {
-  -webkit-filter: brightness(105%);
-          filter: brightness(105%);
+  filter: brightness(105%);
 }
-
+.formlogin .formmain button.facebook {
+  background-color: #3b5998;
+}
+.formlogin .formmain button.google {
+  background-color: #e76150;
+}
 .formlogin .formmain button.huy {
   background-color: var(--color3);
 }
-
 .formlogin .formmain .blockbot {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .formlogin .formmain .blockbot a {
   color: var(--color2);
 }
-
 .formlogin .formmain .blockbot a:hover {
   color: var(--colorlink);
 }
-
 .formlogin .formmain .blockbot a.btn-dangnhap {
   font-weight: 500;
   color: var(--colorlink);
 }
-
 .formlogin .formmain .blockbot a.btn-dangnhap:hover {
   text-decoration: underline;
 }
-
 .formlogin .formmain .input-group {
   color: var(--color3);
 }
-
 .formlogin .formmain .input-group i.fa {
   position: absolute;
   left: 17px;
@@ -138,58 +117,44 @@ main {
   top: 12px;
   font-size: 1rem;
 }
-
 .formlogin .formmain .input-group input.form-control {
   font-size: 14px;
-  padding: .575rem .75rem;
+  padding: 0.575rem 0.75rem;
   padding-left: 30px;
   border-radius: 5px !important;
 }
-
 .formlogin .formmain .checkcheck {
   color: var(--color2);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .formlogin .formmain .checkcheck .form-check-input {
   margin-right: 5px;
-  border-radius: .25em !important;
+  border-radius: 0.25em !important;
   margin-top: 0;
 }
-
 .formlogin .formmain .checkcheck a {
   color: var(--colorlink);
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
 .formlogin .formmain .checkcheck a:hover {
   text-decoration: underline;
 }
-
 .formlogin .formmain .form-label1 {
   margin-bottom: 0;
 }
-
 .formlogin .formmain span i {
   margin-right: 5px;
   color: var(--colorlink);
 }
-
 .formlogin .formmain span strong {
   color: var(--color1);
 }
-
 .formlogin .formmain .maotp a {
   color: var(--colorlink);
 }
-
 .formlogin .formmain .pass .form-control.is-valid, .formlogin .formmain .was-validated .pass .form-control:valid {
   background-position: right calc(.375em + .1875rem + 1.5rem) center;
 }
-
 .formlogin i.bi {
   position: absolute;
   right: 20px;
@@ -200,8 +165,6 @@ main {
 
 footer {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: center;
   position: fixed;
@@ -209,13 +172,11 @@ footer {
   margin-top: 2rem;
   bottom: 0;
 }
-
 footer .mainfooter {
   position: relative;
   bottom: 0;
   padding: 30px 0;
 }
-
 footer .mainfooter img {
   width: 100px;
   height: 30px;
@@ -223,7 +184,6 @@ footer .mainfooter img {
      object-fit: cover;
   margin-bottom: 25px;
 }
-
 footer .mainfooter p {
   line-height: 1.6;
 }
@@ -235,7 +195,6 @@ footer .mainfooter p {
 .dangky .formlogin {
   margin-top: 5%;
 }
-
 .dksd .logo-login {
   width: 126px;
   height: 58px;
@@ -244,61 +203,42 @@ footer .mainfooter p {
   display: block;
   margin: 2rem auto 1rem;
 }
-
 .dksd h4.title-login {
   text-align: center;
   color: var(--color2);
   text-transform: uppercase;
   margin: 38px 0 25px;
 }
-
 .dksd h4.thanhcong {
   color: var(--colorok);
 }
-
 .dksd footer {
   position: fixed;
   padding-top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-top: 70px;
 }
-
 .dksd footer .menufooter {
   background-color: #e6e6e6;
   width: 100%;
   padding: 0.5rem 0;
   margin-bottom: 1rem;
 }
-
 .dksd footer .menufooter ul {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 0;
   padding: 0;
 }
-
 .dksd footer .menufooter ul li {
   margin: 0 0.5rem;
 }
-
 .dksd footer .menufooter ul li a {
   color: var(--color2);
 }
-
 .dksd footer .menufooter ul li a:hover {
   color: var(--colorlink);
 }
@@ -306,25 +246,24 @@ footer .mainfooter p {
 @media (max-width: 1024px) {
   /*	footer{position: relative;}*/
 }
-
 @media (max-width: 540px) {
   .formlogin {
     background: transparent;
   }
+
   footer {
     margin-top: 70px;
     font-size: 12px;
   }
+
   :root {
     --spacing:15px;
   }
 }
-
 @media (max-width: 320px) {
   footer {
     position: relative;
     margin-top: 70px;
     font-size: 12px;
   }
-}
-/*# sourceMappingURL=mainlogin.css.map */
+}/*# sourceMappingURL=mainlogin.css.map */
