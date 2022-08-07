@@ -373,6 +373,12 @@ footer .mainfooter p {
   margin-bottom: 0.2rem;
 }
 
+.dangnhapmoi ul li a:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+  color: var(--color3);
+}
+
 @media (max-width: 1024px) {
   /*	footer{position: relative;}*/
   :root {
