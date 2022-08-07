@@ -10,6 +10,7 @@ $fontfam:'Montserrat', Roboto, sans-serif;
 --whitecolor:#fff;
 --colorlink:#409ff5;
 --spacing:30px;
+--ratio:1;
 }
 body{font-family: $fontfam;font-size: 14px;font-weight: 400;background: url("../images/pattern-bg.jpg") repeat top center;}
 *{outline: none;box-sizing: border-box;padding: 0;margin: 0;}
@@ -90,7 +91,16 @@ footer{width: 100%;display: flex;text-align: center;position: fixed;background:v
 	}
 }
 
-
+.dangnhapmoi{display: flex;align-items: center;justify-content: center;flex-direction: column;
+	h5{color: var(--color3);font-size:0.8rem;font-weight: 300;}
+	ul{list-style: none;padding: 0;display: flex;justify-content: center;align-items: center;grid-gap: calc(40px * var(--ratio));width: 100%;
+		li{
+			a{display: flex;align-items: center;justify-content: center;flex-direction: column;color: var(--color2);font-weight:500;
+				img{max-width: 100%;margin-bottom: 0.2rem;}
+			}
+		}
+	}
+}
 
 
 
@@ -115,6 +125,9 @@ footer{width: 100%;display: flex;text-align: center;position: fixed;background:v
 
 @media (max-width: 1024px) {
 /*	footer{position: relative;}*/
+:root {
+	--ratio:0.4;
+}
 }
 
 @media (max-width: 540px) {
@@ -127,4 +140,5 @@ footer{width: 100%;display: flex;text-align: center;position: fixed;background:v
 
 @media (max-width: 320px) {
 	footer{position: relative;margin-top: 70px;font-size: 12px;}
+	.dangnhapmoi ul li a img{max-width: 50px;}
 }
