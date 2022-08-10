@@ -91,7 +91,11 @@ footer{width: 100%;display: flex;text-align: center;position: fixed;background:v
 }
 
 .dangnhapmoi{display: flex;align-items: center;justify-content: center;flex-direction: column;
-	h5{color: var(--color3);font-size:0.8rem;font-weight: 300;}
+	h5{color: var(--color3);font-size:0.8rem;font-weight: 300;
+		a.dangkybtn{font-weight: 700;color: #293087;
+			&:hover{text-decoration: underline;}
+		}
+	}
 	ul{list-style: none;padding: 0;display: flex;justify-content: center;align-items: center;grid-gap: calc(40px * var(--ratio));width: 100%;
 		li{
 			a{display: flex;align-items: center;justify-content: center;flex-direction: column;color: var(--color2);font-weight:500;

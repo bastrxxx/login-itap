@@ -334,6 +334,15 @@ footer .mainfooter p {
   font-weight: 300;
 }
 
+.dangnhapmoi h5 a.dangkybtn {
+  font-weight: 700;
+  color: #293087;
+}
+
+.dangnhapmoi h5 a.dangkybtn:hover {
+  text-decoration: underline;
+}
+
 .dangnhapmoi ul {
   list-style: none;
   padding: 0;
